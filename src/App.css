@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    overflow-x: hidden;
+}
+
+.custom_swal{
+    @apply flex flex-row items-center
+}
+
+.links.active li{
+    @apply duration-500 transition-all ml-[8px]
+}
+
+.links.active li::before{
+    @apply content-[''] h-10 w-[5px] absolute left-0 rounded-r-[5px] duration-500
+}
+.links:hover li{
+    @apply duration-300 transition-all !text-[22px]
+}
+
+.bottomLinks.active li span:nth-child(1){
+    @apply text-primary-one bg-theme-color border-4 border-primary-two -translate-y-7
+}
+.bottomLinks.active li span:nth-child(1)::before{
+    @apply content-[''] h-[17px] w-[17px] bg-theme-color absolute top-4 -left-[19px] z-50 rounded-tr-full duration-700 shadow-nav_shadow_before;
+    /* box-shadow: 1px -10px 0 0px white; */
+}
+.bottomLinks.active li span:nth-child(1)::after{
+    @apply content-[''] h-[17px] w-[17px] bg-theme-color absolute top-4 -right-[19px] z-50 rounded-tl-full duration-700 shadow-nav_shadow_after;
+    /* box-shadow: 0px -10px 0 0px white; */
+}
+
+.nav_lists .bottomLinks:nth-child(2) li span:nth-child(1){
+    @apply !p-[5px]
+}
+.nav_lists .bottomLinks:nth-child(4) li span:nth-child(1){
+    @apply !p-[5px] mx-2
+}
+.nav_lists .bottomLinks:nth-child(6) li span:nth-child(1){
+    @apply !p-[5px]
+}
+
+.bottomLinks.active li span:nth-child(2){
+    @apply !opacity-100
+}
+
+ .aletrPopup{
+    @apply w-[min(500px,70%)]
+ }
+
+ .alertIcon{
+    @apply size-10 text-[10px] font-medium md:size-14 md:text-[11px]
+ }
+
+#element::-webkit-scrollbar{
+    @apply !w-0 hidden
+ }
+
+.education::-webkit-scrollbar{
+    @apply w-[5px]
+}
+.education::-webkit-scrollbar-thumb{
+    @apply bg-theme-color rounded-md !h-5
+}
