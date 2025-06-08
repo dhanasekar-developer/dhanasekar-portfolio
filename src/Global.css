@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark{
+    --primary-one: #000;
+    --primary-two: #151825;
+    --primary-three: #313849;
+    --primary-four: #313849;
+    --primary-five: #000;
+    --primary-six: #313849;
+    --secondary-one: #fff;
+    --secondary-two: #f7f9fb;
+    --secondary-three: #f0f1f2;
+    --secondary-four: #fff;
+    --secondary-five: #f0f1f2;
+    --secondary-six: #dcdfe3;
+
+}
+
+.light{
+    --primary-one: #fff;
+    --primary-two: #f7f9fb;
+    --primary-three: #f0f1f2;
+    --primary-four: #fff;
+    --primary-five: #f0f1f2;
+    --primary-six: #fff;
+    --secondary-one: #000;
+    --secondary-two: #151825;
+    --secondary-three: #313849;
+    --secondary-four: #313849;
+    --secondary-five: #000;
+    --secondary-six: #1f2937;
+    
+}
+
+.theme-one{
+    --theme-color: #6c6ae7;
+}
+.theme-two{
+    --theme-color: #ff6347;
+}
+.theme-three{
+    --theme-color: #37b182;
+}
+.theme-four{
+    --theme-color: #00aef2;
+}
+.theme-five{
+    --theme-color: #ec1839;
+}
+.theme-six{
+    --theme-color: #f021b2;
+}
+.theme-seven{
+    --theme-color: #577ff4;
+}
+.theme-eight{
+    --theme-color: #fa5b0f;
+}
+.theme-nine{
+    --theme-color: #FFA500;
+}
+.theme-ten{
+    --theme-color: #00a800;
+}
