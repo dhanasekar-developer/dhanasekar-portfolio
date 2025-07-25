@@ -14,8 +14,8 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import project_1 from "../assets/project_1.png"
 import project_2 from "../assets/project_2.png"
-
-
+import { BiLogoPostgresql } from "react-icons/bi";
+import { TbBrandRedux } from "react-icons/tb";
 
 export const navigations = [
     {'id':1,'title':'Home','toPath':'home','icon':<FaHome size={25} />,'element':Home},
@@ -31,14 +31,14 @@ export const skills = [
     {'id':1,'tagName':'HTML','tag':<FaHtml5 />,'logoColor':'#dc2626'},
     {'id':2,'tagName':'CSS','tag':<IoLogoCss3 />,'logoColor':'#38bdf8'},
     {'id':3,'tagName':'Javascript','tag':<RiJavascriptFill />,'logoColor':'#F0DB4F'},
-    {'id':4,'tagName':'Bootstrap','tag':<FaBootstrap />,'logoColor':'#784abc'},
+    // {'id':4,'tagName':'Bootstrap','tag':<FaBootstrap />,'logoColor':'#784abc'},
     {'id':5,'tagName':'Tailwind CSS','tag':<RiTailwindCssFill  />,'logoColor':'#16becb'},
-    {'id':6,'tagName':'Jquery','tag':<DiJqueryLogo />,'logoColor':'#0868AC'},
     {'id':7,'tagName':'React js','tag':<FaReact />,'logoColor':'#61DBFB'},
     {'id':8,'tagName':'python','tag':<FaPython />,'logoColor':'#4B8BBE'},
     {'id':9,'tagName':'Django','tag':<SiDjango />,'logoColor':'#15803d'},
-    {'id':10,'tagName':'PHP','tag':<FaPhp />,'logoColor':'#484C89'},
-    {'id':11,'tagName':'MySql','tag':<SiMysql />,'logoColor':'#00758f'},
+    // {'id':10,'tagName':'PHP','tag':<FaPhp />,'logoColor':'#484C89'},
+    // {'id':11,'tagName':'MySql','tag':<SiMysql />,'logoColor':'#00758f'},
+    {'id':12,'tagName':'Postgresql ','tag':<BiLogoPostgresql />,'logoColor':'#336791'},
 ]
 
 export const themeData = [
@@ -62,23 +62,24 @@ export const resumeData = {
         {id:3, title:'Certification', content:'React.js Frontend Developer Course', year:'Completed after graduation | Duration: 4 months'},
     ],
 
-    skills:[
+    skills: [
         {'id':1,'tagName':'HTML','tag':<FaHtml5 />,'logoColor':'#dc2626'},
         {'id':2,'tagName':'CSS','tag':<IoLogoCss3 />,'logoColor':'#38bdf8'},
         {'id':3,'tagName':'Javascript','tag':<RiJavascriptFill />,'logoColor':'#F0DB4F'},
-        {'id':4,'tagName':'Bootstrap','tag':<FaBootstrap />,'logoColor':'#784abc'},
+        // {'id':4,'tagName':'Bootstrap','tag':<FaBootstrap />,'logoColor':'#784abc'},
         {'id':5,'tagName':'Tailwind CSS','tag':<RiTailwindCssFill  />,'logoColor':'#16becb'},
-        {'id':6,'tagName':'Jquery','tag':<DiJqueryLogo />,'logoColor':'#0868AC'},
         {'id':7,'tagName':'React js','tag':<FaReact />,'logoColor':'#61DBFB'},
-        {'id':8,'tagName':'python','tag':<FaPython />,'logoColor':'#4B8BBE'},
-        {'id':9,'tagName':'Django','tag':<SiDjango />,'logoColor':'#15803d'},
-        {'id':10,'tagName':'PHP','tag':<FaPhp />,'logoColor':'#484C89'},
-        {'id':11,'tagName':'MySql','tag':<SiMysql />,'logoColor':'#00758f'},
+        {'id':8,'tagName':'Redux','tag':<TbBrandRedux />,'logoColor':'#764abc'},
+        {'id':9,'tagName':'python','tag':<FaPython />,'logoColor':'#4B8BBE'},
+        {'id':10,'tagName':'Django','tag':<SiDjango />,'logoColor':'#15803d'},
+        // {'id':11,'tagName':'PHP','tag':<FaPhp />,'logoColor':'#484C89'},
+        // {'id':12,'tagName':'MySql','tag':<SiMysql />,'logoColor':'#00758f'},
+        {'id':13,'tagName':'Postgresql ','tag':<BiLogoPostgresql />,'logoColor':'#336791'},
     ],
 
     experience:[
-        {id:1, title:'Front-End Developer',designation:'Trainee', company:'i Human Power | Duration: 3 Months', content:'Worked as a Front-End Developer, focusing on HTML, CSS, and JavaScript to build responsive and user-friendly web interfaces. Gained experience in developing and optimizing UI components, ensuring cross-browser compatibility, and improving website performance. Collaborated with the development team to enhance design consistency and user experience.'},
-        {id:2, title:'Full Stack Developer',designation:'Junior Associate', company:'i Human Power | Duration: 9 Months', content:'Worked as a Full Stack Developer, specializing in Django and Python. Responsible for developing, maintaining, and optimizing web applications, handling both front-end and back-end development. Gained experience in building RESTful APIs, database management, and implementing user-friendly interfaces.'}
+        {id:1, title:'Front-End Developer',designation:'Trainee', company:'AV7 SCM | Duration: 3 Months', content:'Worked as a Front-End Developer, focusing on HTML, CSS, and JavaScript to build responsive and user-friendly web interfaces. Gained experience in developing and optimizing UI components, ensuring cross-browser compatibility, and improving website performance. Collaborated with the development team to enhance design consistency and user experience.'},
+        {id:2, title:'Full Stack Developer',designation:'Junior Associate', company:'AV7 SCM | Duration: 9 Months', content:'Worked as a Full Stack Developer, specializing in React JS and Django. Responsible for developing, maintaining, and optimizing web applications, handling both front-end and back-end development. Gained experience in building RESTful APIs, database management, and implementing user-friendly interfaces.'}
     ]
    
 }

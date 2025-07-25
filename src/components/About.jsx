@@ -24,7 +24,7 @@ export default function About({background}) {
 			whileInView={{ x:0, opacity:1 }}
 			transition={{ duration:0.7, delay:0.1 }}
 			className='font-Nunito font-bold capitalize text-justify text-lg lg:text-xl'>
-			Hello! I'm ----------------, a passionate Full-Stack Developer with expertise in both frontend and backend technologies. I specialize in building responsive, user-friendly interfaces using HTML, CSS, JavaScript, and React.js, while developing secure, scalable backend systems with PHP and Django. I’m also skilled in MySQL for efficient database management. My focus is on writing clean, maintainable code to deliver high-quality web applications that meet both client and user needs.
+			Hello! I'm ----------------, a passionate Full-Stack Developer with expertise in both frontend and backend technologies. I specialize in building responsive, user-friendly interfaces using HTML, CSS, JavaScript, and React.js, while developing secure, scalable backend systems with Python and Django. I’m also skilled in Postgresql for efficient database management. My focus is on writing clean, maintainable code to deliver high-quality web applications that meet both client and user needs.
 			</motion.p>
 		</div>
     </div>

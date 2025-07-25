@@ -136,7 +136,7 @@ export default function Contact({background}) {
 										value={formData[id]}
 										onChange={handleChange}
 										required
-										className={`${!dark ? 'border-[3px] border-primary-three' : ''} ${id != 'email' ? 'capitalize' : ''}  peer text-secondary-one  bg-primary-six shadow-shadow_1 !font-Nunito h-12 w-full rounded-md  px-3 font-bold  text-lg text-gray-300 outline-none transition-all duration-200 relative z-[0]`}
+										className={`${id != 'email' ? 'capitalize' : ''}  peer text-secondary-one  bg-primary-six shadow-shadow_8 !font-Nunito h-12 w-full rounded-md  px-3 font-bold  text-lg text-gray-300 outline-none transition-all duration-200 relative z-[0]`}
 										/> 
 
 										<label ref={(e)=>labelsRef.current[id] = e} id={`lable_${id}`} htmlFor={id} className={`text-secondary-one font-Nunito absolute top-2 left-3 font-bold text-lg peer-focus:-top-8 peer-focus:left-1 peer-valid:-top-8 peer-valid:left-1 transition-all duration-300 w-full flex justify-between`}>
@@ -162,7 +162,7 @@ export default function Contact({background}) {
 										value={formData[id]}
 										onChange={handleChange}
 										required
-										className={`${!dark ? 'border-[3px] border-primary-three' : ''} peer text-secondary-one  bg-primary-six shadow-shadow_1 !font-Nunito !h-32 w-[100%] rounded-md py-2 px-3 font-bold capitalize text-lg  outline-none transition-all duration-200 `}/>
+										className={` peer text-secondary-one bg-primary-six shadow-shadow_8 !font-Nunito !h-32 w-[100%] rounded-md py-2 px-3 font-bold capitalize text-lg  outline-none transition-all duration-200 resize-none`}/>
 										<label htmlFor='content' className={`text-secondary-one font-Nunito absolute top-2 left-3 font-bold text-lg peer-focus:-top-8 peer-focus:left-1 peer-valid:-top-8 peer-valid:left-1 transition-all duration-300`}>
 											Content 
 											<span className='text-red-500 text-2xl'>*</span>
@@ -185,7 +185,6 @@ export default function Contact({background}) {
 							setLoading={setLoading} 
 							/>
 						</div>
-
 					</form>
 				</div>
 			</div>

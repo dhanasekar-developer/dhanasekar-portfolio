@@ -1,5 +1,6 @@
 {
   "name": "myportfolio",
+  "home": "https://dhanasekar-developer.github.io/dhanasekar-portfolio/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +9,9 @@
     "start:backend": "nodemon index.cjs",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -20,7 +23,6 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "framer-motion": "^12.4.2",
-    "gh-pages": "^6.3.0",
     "lodash.debounce": "^4.0.8",
     "nodemon": "^3.1.9",
     "react": "^18.3.1",
