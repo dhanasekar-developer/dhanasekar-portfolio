@@ -15,7 +15,8 @@
     --secondary-four: #fff;
     --secondary-five: #f0f1f2;
     --secondary-six: #dcdfe3;
-
+    --clr_bd_1: #47474a;
+    --clr_bd_2: #6b7280;
 }
 
 .light{
@@ -31,7 +32,8 @@
     --secondary-four: #313849;
     --secondary-five: #000;
     --secondary-six: #1f2937;
-    
+    --clr_bd_1: #e8e4ec;
+    --clr_bd_2: #6b7280;
 }
 
 .theme-one{

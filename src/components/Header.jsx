@@ -7,6 +7,7 @@ import { useDispatch } from 'react-redux';
 import { setDarkMode } from '../slices/darkModeSlice';
 import { getContainerWidth } from '../slices/containerWidthSlice';
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import { PiPaintBrushBroad } from "react-icons/pi";
 
 import Theme from "./Theme";
 
@@ -48,7 +49,7 @@ export default function Header() {
                     {currentNav}
                 </div>
                 <div className=''>
-                    <button className={`text-primary-one text-[22px] font-extrabold font-Nunito flex gap-2 items-center duration-500 !overflow-hidden outline-none focus:outline-none`} 
+                    <button className={`text-primary-one text-[18px] font-extrabold font-Nunito flex gap-2 items-center duration-500 !overflow-hidden outline-none focus:outline-none`} 
                     onClick={ () => handleDarkMode() }
                     >
                         {!dark ? (
@@ -67,8 +68,9 @@ export default function Header() {
                 </div>
             </div>
             <div>
-                <button ref={themeBtn} onClick={hideAndShowTheme} title="Theme" className="mt-2">
-                    <FaGear size={25}/>
+                <button ref={themeBtn} onClick={hideAndShowTheme} title="Theme" className="text-primary-one text-[18px] font-extrabold font-Nunito flex gap-1 items-center duration-500 !overflow-hidden outline-none focus:outline-none">
+                    <PiPaintBrushBroad className="rotate-[-140deg]" size={25}/>
+                    <span>Theme</span>
                 </button>
             </div>
         </div>

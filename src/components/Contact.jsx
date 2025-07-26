@@ -6,6 +6,8 @@ import { getContainerWidth } from '../slices/containerWidthSlice';
 import { getScreenWidth } from '../slices/screenWidthSlice';
 import { motion } from 'framer-motion';
 import { contactField } from './Datas';
+import { useForm } from 'react-hook-form'
+
 
 export default function Contact({background}) {
 
@@ -13,89 +15,8 @@ export default function Contact({background}) {
 	const containerWidth = useSelector(getContainerWidth)
 	const width = useSelector(getScreenWidth)
 
-	const [ formData, setFormData ] = useState({
-		userName : '',
-		companyName : '',
-		email: '',
-		mobileNo: '',
-		subject: '',
-		content: '',
-	})
-	const [loading, setLoading] = useState(false);
-	const [mobileNoValid, setMobileNoValid] = useState(false)
-	const [emailValid, setEmailValid] = useState(false)
-
 	const labelsRef = useRef({})
 	const inputFieldsRef = useRef({})
-
-	const handleChange = (event) =>{
-		const {name,value} = event.target
-		setFormData({
-			...formData,
-			[name]:value,
-		})
-	}
-
-	let userName = formData.userName.trim();
-	let companyName = formData.companyName.trim();
-	let email = formData.email.trim();
-	let subject = formData.subject.trim();
-	let content = formData.content.trim();
-
-	const fields = [
-		{'title':'Name','value':userName},
-		{'title':'Company Name','value':companyName},
-		{'title':'Email','value':email},
-		{'title':'Subject','value':subject},
-		{'title':'Content','value':content}];
-
-	const allFieldsFilled = fields.every(field => field.value != '')
-
-	useEffect(()=>{
-		if(inputFieldsRef.current){
-			const mobileNoField = inputFieldsRef.current.mobileNo
-			const emailField = inputFieldsRef.current.email
-			
-			const numberOnly = (event) => {
-				if(event.key == 'F5') return;
-				if(!/[0-9]/.test(event.key) && event.key != 'Backspace'){
-					event.preventDefault()
-				}else if(event.target.value.length>=10 && event.key != 'Backspace'){
-					event.preventDefault()
-				}
-			}
-			const mobileNoValidation = (event)=>{
-				const isValid = event.target.value.length == 0 || event.target.value.length == 10
-				setMobileNoValid(isValid)
-					isValid ? labelsRef.current.mobileNo.lastElementChild.innerHTML = '' : labelsRef.current.mobileNo.lastElementChild.innerHTML = '!';
-			}
-			const emailValidation = ()=>{
-				if(emailField.value.length != 0){
-					const validateCondition = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
-					const isValid = validateCondition.test(emailField.value)
-					setEmailValid(isValid)
-					isValid ? labelsRef.current.email.lastElementChild.innerHTML = '' : labelsRef.current.email.lastElementChild.innerHTML = '!'
-					
-				}else{
-					labelsRef.current.email.lastElementChild.innerHTML = ''
-				}
-			}
-			mobileNoField.addEventListener('keydown',numberOnly)
-			mobileNoField.addEventListener('change', mobileNoValidation)
-
-			emailField.addEventListener('change',emailValidation)
-
-			return () => {
-				if(mobileNoField){
-					mobileNoField.removeEventListener('keydown',numberOnly)
-					mobileNoField.removeEventListener('change', mobileNoValidation)
-				}
-				if(emailField){
-					emailField.removeEventListener('change',emailValidation)
-				}
-			}
-		}
-	},[])
 
 	const animation = (x_value) =>({
 		hidden:{ x:x_value, opacity:0 },
@@ -174,16 +95,7 @@ export default function Contact({background}) {
 						})
 						}
         				<div className={`flex justify-center ${width<900 ? 'col-span-1' : 'col-span-2' }`}>
-							<SubmitFunction 
-							formData={formData}
-							setFormData={setFormData}
-							fields={fields}
-							dark={dark}
-							allFieldsFilled={allFieldsFilled}
-							mobileNoValid={mobileNoValid}
-							emailValid={emailValid}
-							setLoading={setLoading} 
-							/>
+							<SubmitFunction formData={formData} />
 						</div>
 					</form>
 				</div>

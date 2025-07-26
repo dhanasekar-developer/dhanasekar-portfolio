@@ -23,6 +23,8 @@ export default {
         'secondary-four': 'var(--secondary-four)',
         'secondary-five': 'var(--secondary-five)',
         'secondary-six': 'var(--secondary-six)',
+        'clr-bd-1': 'var(--clr-bd-1)',
+        'clr-bd-2': 'var(--clr-bd-2)',
         'theme-color': 'var(--theme-color)',
       },
       boxShadow:{
