@@ -7,6 +7,7 @@ import resume from '../assets/project_1.png'
 import { getScreenWidth } from '../slices/screenWidthSlice';
 import { useSelector } from 'react-redux'
 import { motion } from "framer-motion"
+import profile from '../assets/profile_img.png'
 
 
 export default function Home({background}) {
@@ -69,7 +70,9 @@ export default function Home({background}) {
             transition={{ duration:0.5, delay:0.2 }}
             className=''
             >
-                <div className={` bg-theme-color rounded-full size-80 max-1400:size-64 `}></div>
+                <div className={` bg-theme-color rounded-full size-80 max-1400:size-64 `}>
+                    <img src={profile} alt="" className='h-full w-full rounded-full' />
+                </div>
             </motion.div>
             
         </div>

@@ -90,10 +90,10 @@ export const projects = [
 ]
 
 export const contactField = [
-    {'id':'userName','title':'Name','colSpan':1,'fieldType':'text'},
-    {'id':'companyName','title':'Company Name','colSpan':1,'fieldType':'text'},
-    {'id':'email','title':'Email','colSpan':1,'fieldType':'text'},
-    {'id':'mobileNo','title':'Mobile No','colSpan':1,'fieldType':'text'},
-    {'id':'subject','title':'Subject','colSpan':2,'fieldType':'text'},
-    {'id':'content','title':'Content','colSpan':2,'fieldType':'textarea'},
+    {'id':'userName','title':'Name','colSpan':1,'fieldType':'text', 'max_length': 20},
+    {'id':'companyName','title':'Company Name','colSpan':1,'fieldType':'text', 'max_length': 50},
+    {'id':'email','title':'Email','colSpan':1,'fieldType':'text', 'max_length': 30},
+    {'id':'mobileNo','title':'Mobile No','colSpan':1,'fieldType':'number', 'max_length': 10},
+    {'id':'subject','title':'Subject','colSpan':2,'fieldType':'text', 'max_length': 100},
+    {'id':'content','title':'Content','colSpan':2,'fieldType':'textarea', 'max_length': 300},
 ]

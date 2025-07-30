@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-
+import profile from '../assets/profile_img.png'
 
 export default function About({background}) {
   return (
@@ -10,6 +10,7 @@ export default function About({background}) {
 		whileInView={{ x:0, opacity:1 }}
 		transition={{ duration:0.7, delay:0.2 }}
 		className='size-[350px] max-1600:hidden block rounded-full bg-theme-color font-Nunito'>
+			<img src={profile} alt="" className='h-full w-full rounded-full' />
 			{/* image */}
 		</motion.div>
 		<div className='max-w-[85%] ld:max-w-[80%] xl:max-w-[800px]'>

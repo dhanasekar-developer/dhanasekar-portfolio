@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "@hookform/resolvers": "^5.2.0",
     "@reduxjs/toolkit": "^2.5.1",
     "@sweetalert2/themes": "^5.0.26",
     "axios": "^1.7.9",
@@ -35,7 +36,7 @@
     "react-scroll": "^1.9.0",
     "react-typed": "^2.0.12",
     "sweetalert2": "^11.15.10",
-    "zod": "^4.0.10"
+    "zod": "^4.0.13"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
