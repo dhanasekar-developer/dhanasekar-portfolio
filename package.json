@@ -1,17 +1,13 @@
 {
   "name": "myportfolio",
-  "home": "https://dhanasekar-developer.github.io/dhanasekar-portfolio/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "start:backend": "nodemon index.cjs",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
