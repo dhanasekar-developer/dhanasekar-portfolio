@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { useDispatch, useSelector } from 'react-redux';
-import { setCurrentNav } from '../slices/CurrentNavSlice';
+import { setCurrentNav } from '../slices/currentNavSlice';
 import { getExpand, updateExpand } from '../slices/navExpandSlice';
 import { navigations } from './Datas';
 import { useScroll } from '../context/ScrollContext';

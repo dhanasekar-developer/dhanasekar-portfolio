@@ -1,6 +1,6 @@
 import { useRef, useEffect } from "react";
 import { FaSun,FaGear } from "react-icons/fa6";
-import { getCurrentNav } from '../slices/CurrentNavSlice';
+import { getCurrentNav } from '../slices/currentNavSlice';
 import { useSelector } from 'react-redux';
 import { getDarkMode } from '../slices/darkModeSlice';
 import { useDispatch } from 'react-redux';
