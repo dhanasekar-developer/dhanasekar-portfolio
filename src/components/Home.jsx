@@ -1,4 +1,3 @@
-import React from 'react'
 import { ReactTyped } from "react-typed";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiNetlify } from "react-icons/si";
@@ -16,7 +15,6 @@ export default function Home({background}) {
     const icons = [
         {'tagName':'Linked In','tag':< FaLinkedin/>,'link':'https://www.linkedin.com/in/dhanasekar-developer'},
         {'tagName':'GitHub','tag':< FaGithub/>,'link':'https://github.com/dhanasekar-developer'},
-        {'tagName':'Nelify','tag':< SiNetlify/>,'link':'#'},
     ]
 
     return (
@@ -31,7 +29,7 @@ export default function Home({background}) {
                     Hi
                 </h1>
                 <h2 className='font-extrabold 2xl:text-5xl xl:text-4xl lg:3xl md:2xl'>
-                    i'm <span className='text-theme-color'>------------</span>
+                    i'm <span className='text-theme-color'>Dhanasekar</span>
                 </h2>
                 <h2  className='font-extrabold 2xl:text-4xl xl:text-3xl lg:text-2xl md:text-2xl sm:text-xl text-xl'>
                     <span className='text-theme-color'>And i'm a </span>

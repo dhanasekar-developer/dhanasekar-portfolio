@@ -57,7 +57,7 @@ export default function Navigation() {
                         <div>
                             <div className='flex items-center px-[17px] py-4 gap-[18px] overflow-hidden'>
                                 <span className='inline-block text-theme-color bg-primary-one rounded-full px-[10px] py-[8px] pb-[6px] font-[900] text-[25px] duration-500'>DS</span>
-                                <h2 className={`${expand ? 'w-auto' : 'w-0'} text-[28px] text-nowrap uppercase font-Sriracha font-bold transition-all !duration-500 text-primary-one m-0 p-0`}>my port</h2>
+                                <h2 className={`${expand ? 'w-auto' : 'w-0'} text-[28px] text-nowrap capitalize font-Sriracha font-bold transition-all !duration-500 text-primary-one m-0 p-0`}>Dhanasekar</h2>
                             </div>
                             
                             <button className={`${expand ? 'rotate-180' : ''} size-[40px] text-5xl font-bold rounded-full bg-primary-one text-theme-color flex justify-center items-center absolute top-[75px] -right-[20px] shadow-shadow_3 duration-500 !z-[900]`} onClick={handleExpand}><MdOutlineKeyboardArrowRight /></button>
