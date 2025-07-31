@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import currentNavReducer from "../slices/CurrentNavSlice";
+import currentNavReducer from "../slices/currentNavSlice";
 import darkModeReducer from "../slices/darkModeSlice";
 import navExpandReducer from "../slices/navExpandSlice";
 import screenWidthReducer from "../slices/screenWidthSlice";
