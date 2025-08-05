@@ -2,7 +2,7 @@ import { ReactTyped } from "react-typed";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiNetlify } from "react-icons/si";
 import { IoIosDocument } from "react-icons/io";
-import resume from '../assets/project_1.png'
+import resume from '../assets/Dhanasekar's CV.png'
 import { getScreenWidth } from '../slices/screenWidthSlice';
 import { useSelector } from 'react-redux'
 import { motion } from "framer-motion"
