@@ -19,9 +19,9 @@ export default function Experience() {
   return (
     <div className='education font-Nunito flex flex-wrap gap-3 justify-center'>
         {
-            resumeData.experience.map((e,index)=>{
+            resumeData.experience.map((a, index)=>{
                 const x_value = index%2 == 0 ? -100 : 100
-                const {id, title, designation, company, content} = e
+                const {id, title, designation, company, content, subContent} = a
                 return(
                     <motion.div
                     variants={animation(x_value)}
@@ -32,6 +32,12 @@ export default function Experience() {
                         <span className='text-secondary-one text-[17px] font-extrabold capitalize mb-2'>Company : {company}</span>
                         <span className='text-secondary-one text-[17px] font-extrabold capitalize mb-2'>Designation : {designation}</span>
                         <span className='text-secondary-one text-[16px] font-medium capitalize text-justify'>{content}</span>
+                        {subContent.map((b, index) => (
+                            <React.Fragment key={index}>
+                                <span className='text-theme-color text-[18px] capitalize font-extrabold leading-7 mt-2 mb-1'>{b.title}:</span>
+                                <span className='text-secondary-one text-[16px] font-medium capitalize text-justify'>{b.content}</span>
+                            </React.Fragment>
+                        ))}
                     </motion.div>
                 )
             })

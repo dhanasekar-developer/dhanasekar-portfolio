@@ -1,13 +1,9 @@
-import React, { useEffect, useState } from 'react'
-import project_1 from "../assets/project_1.png"
+import { useEffect, useState } from 'react'
 import { FaGithub } from "react-icons/fa6";
 import { FaArrowLeft,FaArrowRight,FaLongArrowAltUp  } from "react-icons/fa";
 import { projects } from './Datas';
 import { getScreenWidth } from '../slices/screenWidthSlice';
 import { useSelector } from 'react-redux';
-import { motion } from 'framer-motion'
-
-
 
 export default function Projects({background}) {
 
@@ -31,20 +27,15 @@ export default function Projects({background}) {
 		}
 	}
 	
-
 	useEffect(()=>{
-		
 		const currentProject = project.find((e)=>e.active == true)
-		
 		if(!currentProject) return;
 
 		const nextExist = project.some((e)=>e.id == (Number(currentProject.id) + 1))
 		const prevExist = project.some((e)=>e.id == (Number(currentProject.id) - 1))
-
 	
 		setNextButton(nextExist)
 		setPrevButton(prevExist)
-
 	},[project])
 
 	return (
@@ -60,10 +51,7 @@ export default function Projects({background}) {
 							return(
 								<div key={id} className='flex gap-5 flex-wrap justify-center'>
 	
-									<motion.div 
-									initial={{ x:-100, opacity:0 }}
-									whileInView={{ x:0, opacity:1 }}
-									transition={{ duration:0.5, delay:0.2 }}
+									<div 
 									className='max-w-[500px]'>
 										<div className=' px-2'>
 											<h1 className='font-extrabold'>0{id}</h1>
@@ -97,24 +85,25 @@ export default function Projects({background}) {
 												<FaArrowRight />
 											</button>
 										</div>
-									</motion.div>
-									<motion.div
-									initial={{ x:100, opacity:0 }}
-									whileInView={{ x:0, opacity:1 }}
-									transition={{ duration:0.5, delay:0.2 }}
+									</div>
+									<div
 									className={`${width <600 ? width<500 ? 'w-[97%] h-auto' : 'w-[90%] h-auto' : 'h-[300px] w-[500px]'} `}>
-										<img src={video} alt=""  className={`w-full h-full !transition-opacity !duration-500 `}/> {/* ------video------ */}
-									</motion.div>
+										<video 
+											src={video} 
+											autoPlay
+											loop
+											muted
+											playsInline
+											className='w-full h-full !transition-opacity !duration-500 '
+										>
+										</video>
+									</div>
 								</div>
 							)
 						}
 					})
 				}
 			</div>
-				
-				
-			
-			
 		</div>
 	)
 }

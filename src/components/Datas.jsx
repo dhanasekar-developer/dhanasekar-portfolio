@@ -12,8 +12,8 @@ import Portfolio from "./Portfolio";
 import Resume from "./Resume";
 import Contact from "./Contact";
 import Footer from "./Footer";
-import project_1 from "../assets/project_1.png"
-import project_2 from "../assets/project_2.png"
+import project_1 from "../assets/Ecommerce.mp4"
+import project_2 from "../assets/TicketBooking.mp4"
 import { BiLogoPostgresql } from "react-icons/bi";
 import { TbBrandRedux } from "react-icons/tb";
 
@@ -78,14 +78,12 @@ export const resumeData = {
     ],
 
     experience:[
-        {id:1, title:'Front-End Developer',designation:'Trainee', company:'AV7 SCM | Duration: 3 Months', content:'Worked as a Front-End Developer, focusing on HTML, CSS, and JavaScript to build responsive and user-friendly web interfaces. Gained experience in developing and optimizing UI components, ensuring cross-browser compatibility, and improving website performance. Collaborated with the development team to enhance design consistency and user experience.'},
-        {id:2, title:'Full Stack Developer',designation:'Junior Associate', company:'AV7 SCM | Duration: 9 Months', content:'Worked as a Full Stack Developer, specializing in React JS and Django. Responsible for developing, maintaining, and optimizing web applications, handling both front-end and back-end development. Gained experience in building RESTful APIs, database management, and implementing user-friendly interfaces.'}
+        {id:1, title:'Full Stack Developer',designation:'Junior Associate', company:'AV7 SCM | Duration: 1+ Years', content:'Worked as a Full Stack Developer, specializing in React JS and Django.', subContent: [{title: 'FrontEnd', content:'Enhanced code readability and reuse by creating custom reusable components in React, reducing duplication by 40% across modules.Utilized React Hooks and Redux for efficient state management, improving UI responsiveness and consistency.Developed user-facing interfaces using React.js and Tailwind CSS, contributing to smooth workflows across internal tools and client-facing platforms.'}, {title: 'BackEnd', content:'Boosted API performance by optimizing data handling and logic using Django models, resulting in faster response times.Used PostgreSQL alongside Django ORM for managing structured data with moderate complexity.Collaborated on backend modules for visitor management, logistics, and budgeting, supporting business operations through well-structured APIs.Actively involved in version control, feature deployment, and debugging using Git within an agile team environment.'}]}
     ]
-   
 }
 
 export const projects = [
-    {id:1,title:'front-end project - ecommerce site',content:"Developed a fully functional e-commerce website using React.js, Implemented a shopping cart with add, remove, and update functionalities, along with user authentication. Used React Router for smooth navigation and CSS for a responsive design. Managed state efficiently with React hooks and optimized performance through lazy loading and memoization. This project enhanced my understanding of component-based architecture, state management, and UI responsiveness in React.", language:'react js', deployLink:'', githubLink:'', video: project_1, active:true},
+    {id:1,title:'front-end project - ecommerce site',content:"Developed a fully functional e-commerce website using React.js, Implemented a shopping cart with add, remove, and update functionalities, along with user authentication. Used React Router for smooth navigation and CSS for a responsive design. Managed state efficiently with React hooks and optimized performance. This project enhanced my understanding of component-based architecture, state management, and UI responsiveness in React.", language:'react js', deployLink:'', githubLink:'', video: project_1, active:true},
     {id:2,title:'fullstack project - movie booking site',content:"Built a full-stack movie booking website using HTML, CSS, and JavaScript for the front end, with Node.js and Express.js handling the backend and MongoDB for database storage. The platform allows users to select showtimes, and book tickets seamlessly. Implemented user authentication for secure login and designed a responsive UI for smooth user experience. This project enhanced my expertise in backend development, database management, and integrating front-end with a dynamic server-side application.", language:'HTML, CSS, JS, Node Js, Express Js, MongoDB', deployLink:'', githubLink:'', video: project_2, active:false},
 ]
 
