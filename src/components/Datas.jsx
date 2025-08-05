@@ -57,9 +57,9 @@ export const themeData = [
 export const resumeData = {
     
     education:[
-        {id:1, title:'Higher Secondary Certificate (HSC) – Maths Computer Group', content:'Government Boys Higher Secondary School, Komarapalayam', year:'Year of Completion: 2019'},
+        {id:1, title:'Frontend Certification', content:'React.js Frontend Developer Course', year:'Completed after graduation | Duration: 4 months'},
         {id:2, title:'Bachelor of Engineering (B.E.) in Mechanical Engineering', content:'J.K.K.N. College of Engineering and Technology', year:'2019 – 2023 | CGPA: 8.1'},
-        {id:3, title:'Certification', content:'React.js Frontend Developer Course', year:'Completed after graduation | Duration: 4 months'},
+        {id:3, title:'Higher Secondary Certificate (HSC) – Maths Computer Group', content:'Government Boys Higher Secondary School, Komarapalayam', year:'Year of Completion: 2019'},
     ],
 
     skills: [
