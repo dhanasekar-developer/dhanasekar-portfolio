@@ -20,9 +20,7 @@ export const ScrollProvider = ({ children }) => {
             // console.log(section.getBoundingClientRect().top,',',scrollContainerRef.current.scrollTop)
             // console.log(scrollContainerRef.current)
         }
-       
     }
-
 
   return (
     <ScrollContext.Provider value={{ scrollToSection,scrollContainerRef }}>

@@ -53,12 +53,13 @@ export default function Contact({background}) {
     const loadingHeader = <>Your email is sending...</>
     const successHeader = <><TiTickOutline className="text-3xl p-0" /> Your email sent successfully</>
     const failedHeader = <>Your email is sending...</>
+	const apiLink = import.meta.env.VITE_API_LINK
 
     async function submitFunction(formData){
         event.preventDefault();
         showAlert({loading: true, heading: loadingHeader})
         try{
-            let response = await axios.post("http://localhost:8080/email_send",formData,{
+            let response = await axios.post(`${apiLink}/email_send`,formData,{
                 headers:{
                     'Content-Type': 'application/json'
                 }

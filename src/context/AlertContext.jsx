@@ -43,7 +43,7 @@ function AlertProvider({ children }) {
           <div className="fixed z-20 inset-0 flex items-center justify-center bg-secondary-one opacity-[.12]"></div>
           <div className={`bg-primary-one border-[3px] border-theme-color rounded-xl shadow-shadow_9 w-[90%] max-w-md text-center space-y-4 !z-50 `}>
             <div className="text-2xl min-h-[150px] flex flex-col justify-center items-center gap-4 relative pt-12">
-              <div className="flex items-center justify-center gap-2 text-xl w-full bg-theme-color h-12 absolute top-0 left-0 right-0">
+              <div className="flex items-center justify-center gap-2 text-xl w-full bg-theme-color h-12 absolute top-0 left-0 right-0 !text-white font-bold">
                   {heading}
               </div>
               {isLoading ? (
