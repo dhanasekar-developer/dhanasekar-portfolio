@@ -1,12 +1,11 @@
 import { ReactTyped } from "react-typed";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { SiNetlify } from "react-icons/si";
 import { IoIosDocument } from "react-icons/io";
-import resume from '../assets/Dhanasekar_CV.pdf'
+import resume from '../assets/Dhanasekar_CV.pdf';
 import { getScreenWidth } from '../slices/screenWidthSlice';
-import { useSelector } from 'react-redux'
-import { motion } from "framer-motion"
-import profile from '../assets/profile_img.png'
+import { useSelector } from 'react-redux';
+import { motion } from "framer-motion";
+import profile from '../assets/profile_img.png';
 
 
 export default function Home({background}) {

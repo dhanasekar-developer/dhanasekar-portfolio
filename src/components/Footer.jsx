@@ -1,9 +1,7 @@
-import React from 'react'
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiNetlify } from "react-icons/si";
-import resume from '../assets/project_1.png'
 import { IoIosMail } from "react-icons/io";
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 
 export default function Footer() {
 

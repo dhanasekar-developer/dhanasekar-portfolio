@@ -1,24 +1,23 @@
-import React, { useEffect, useRef } from 'react'
-import "./App.css"
-import "./Global.css"
-import Navigation from './components/Navigation'
-import Header from './components/Header'
-import { useSelector,useDispatch } from 'react-redux'
-import { getDarkMode } from './slices/darkModeSlice'
-import { getExpand } from './slices/navExpandSlice'
-import { updateScreenWidth } from './slices/screenWidthSlice'
-import { updateContainerWidth } from './slices/containerWidthSlice'
-import { getContainerWidth } from './slices/containerWidthSlice'
-import debounce from 'lodash.debounce'
-import { AlertProvider } from './context/AlertContext'
-import { getTheme } from './slices/themeSlice'
-import Elements from './components/Elements'
-import { ScrollProvider } from './context/ScrollContext'
+import { useEffect, useRef } from 'react';
+import "./App.css";
+import "./Global.css";
+import Navigation from './components/Navigation';
+import Header from './components/Header';
+import { useSelector,useDispatch } from 'react-redux';
+import { getDarkMode } from './slices/darkModeSlice';
+import { getExpand } from './slices/navExpandSlice';
+import { updateScreenWidth } from './slices/screenWidthSlice';
+import { updateContainerWidth } from './slices/containerWidthSlice';
+import { getContainerWidth } from './slices/containerWidthSlice';
+import debounce from 'lodash.debounce';
+import { AlertProvider } from './context/AlertContext';
+import { getTheme } from './slices/themeSlice';
+import Elements from './components/Elements';
+import { ScrollProvider } from './context/ScrollContext';
 
 function App() {
     const dispatch = useDispatch()
     const dark = useSelector(getDarkMode)
-    const expand = useSelector(getExpand)
     const containerRef = useRef(null)
     const containerWidth = useSelector(getContainerWidth)
     const theme = useSelector(getTheme)

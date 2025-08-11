@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 import { FaGithub } from "react-icons/fa6";
 import { FaArrowLeft,FaArrowRight,FaLongArrowAltUp  } from "react-icons/fa";
 import { projects } from './Datas';

@@ -2,7 +2,6 @@ import { useState, useCallback, useContext, createContext } from "react";
 import { useSelector } from "react-redux";
 import { getDarkMode } from "../slices/darkModeSlice";
 import { FaArrowsSpin } from "react-icons/fa6";
-import { TiTickOutline } from "react-icons/ti";
 
 const AlertContext = createContext();
 AlertContext.displayName = "AlertContext";

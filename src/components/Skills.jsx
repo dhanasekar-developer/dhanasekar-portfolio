@@ -1,7 +1,7 @@
-import React, {useRef} from 'react'
-import { resumeData } from './Datas'
-import { getDarkMode } from '../slices/darkModeSlice'
-import { useSelector } from 'react-redux'
+import {useRef} from 'react';
+import { resumeData } from './Datas';
+import { getDarkMode } from '../slices/darkModeSlice';
+import { useSelector } from 'react-redux';
 
 export default function Education() {
 

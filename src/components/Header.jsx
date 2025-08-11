@@ -1,11 +1,10 @@
 import { useRef, useEffect } from "react";
-import { FaSun,FaGear } from "react-icons/fa6";
+import { FaSun } from "react-icons/fa6";
 import { getCurrentNav } from '../slices/currentNavSlice';
 import { useSelector } from 'react-redux';
 import { getDarkMode } from '../slices/darkModeSlice';
 import { useDispatch } from 'react-redux';
 import { setDarkMode } from '../slices/darkModeSlice';
-import { getContainerWidth } from '../slices/containerWidthSlice';
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { PiPaintBrushBroad } from "react-icons/pi";
 
@@ -16,7 +15,6 @@ export default function Header() {
     const dispatch = useDispatch()
     const currentNav = useSelector(getCurrentNav)
     const dark = useSelector(getDarkMode)
-    const containerWidth = useSelector(getContainerWidth)
     
     const themeContainer = useRef(null)
     const themeBtn = useRef(null)

@@ -1,11 +1,10 @@
-import React, { forwardRef } from 'react'
 import { themeData } from "./Datas";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { updateTheme } from "../slices/themeSlice";
 import { getDarkMode } from '../slices/darkModeSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import { getTheme } from "../slices/themeSlice";
-const Theme = forwardRef(({hideAndShowTheme},ref) => {
+const Theme = ({ hideAndShowTheme, ref }) => {
     const dark = useSelector(getDarkMode)
     const theme = useSelector(getTheme)
     const dispatch = useDispatch()
@@ -36,7 +35,7 @@ const Theme = forwardRef(({hideAndShowTheme},ref) => {
         </div>
     </div>
   )
-})
+}
 
 
 export default Theme;

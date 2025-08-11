@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
-import Education from './Education'
-import Skills from './Skills'
-import Experience from './Experience'
-import { getScreenWidth } from '../slices/screenWidthSlice'
-import { useSelector } from 'react-redux'
+import { useState } from 'react';
+import Education from './Education';
+import Skills from './Skills';
+import Experience from './Experience';
+import { getScreenWidth } from '../slices/screenWidthSlice';
+import { useSelector } from 'react-redux';
 
 export default function Resume({background}) {
 

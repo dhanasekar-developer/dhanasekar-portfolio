@@ -17,8 +17,6 @@ export const ScrollProvider = ({ children }) => {
                 top:scrollToY,
                 behavior:"smooth"
             })
-            // console.log(section.getBoundingClientRect().top,',',scrollContainerRef.current.scrollTop)
-            // console.log(scrollContainerRef.current)
         }
     }
 

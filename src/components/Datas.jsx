@@ -1,5 +1,4 @@
-import React from 'react'
-import { FaHome, FaImage, FaFileAlt, FaHtml5, FaBootstrap, FaReact, FaPython,FaPhp  } from "react-icons/fa";
+import { FaHome, FaImage, FaFileAlt, FaHtml5, FaBootstrap, FaReact, FaPython, FaPhp } from "react-icons/fa";
 import { IoMdContact, IoLogoCss3 } from "react-icons/io";
 import { GiMightySpanner } from "react-icons/gi";
 import { LuMessageCircleMore } from "react-icons/lu";
@@ -12,8 +11,8 @@ import Portfolio from "./Portfolio";
 import Resume from "./Resume";
 import Contact from "./Contact";
 import Footer from "./Footer";
-import project_1 from "../assets/Ecommerce.mp4"
-import project_2 from "../assets/TicketBooking.mp4"
+import project_1 from "../assets/Ecommerce.mp4";
+import project_2 from "../assets/TicketBooking.mp4";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { TbBrandRedux } from "react-icons/tb";
 

@@ -1,6 +1,6 @@
-import React from 'react'
-import { resumeData } from './Datas'
-import { motion } from 'framer-motion'
+import React from 'react';
+import { resumeData } from './Datas';
+import { motion } from 'framer-motion';
 import { getScreenWidth } from '../slices/screenWidthSlice';
 import { useSelector } from 'react-redux';
 
