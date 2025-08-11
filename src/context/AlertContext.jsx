@@ -53,7 +53,7 @@ function AlertProvider({ children }) {
                 </div>
               ) : (
                 <div className="flex justify-center items-center flex-col gap-2 p-4">
-                  <span className="text-lg font-normal">{message}</span>
+                  <span className="text-[17px] font-bold">{message}</span>
                   <button
                       onClick={closeAlert}
                       className="px-4 py-1 bg-theme-color text-white rounded-full font-semibold text-[14px] mt-2"
