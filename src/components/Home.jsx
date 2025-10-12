@@ -55,7 +55,7 @@ export default function Home({background}) {
                         }
                     </div>
                     <div>
-                        <a href={resume} download="Dhanasekar's CV.png" className={`text-primary-one !bg-theme-color no-underline !font-extrabold !font-Nunito !flex items-center justify-center gap-2 rounded-md px-3 xsm:px-4 py-2 text-base xsm:text-lg transition-all duration-500 hover:!bg-transparent hover:!text-theme-color border-2 border-theme-color`}>
+                        <a href={resume} download="Dhanasekar's CV.pdf" className={`text-primary-one !bg-theme-color no-underline !font-extrabold !font-Nunito !flex items-center justify-center gap-2 rounded-md px-3 xsm:px-4 py-2 text-base xsm:text-lg transition-all duration-500 hover:!bg-transparent hover:!text-theme-color border-2 border-theme-color`}>
                             <span>Download CV</span><IoIosDocument className='text-2xl' />
                         </a>
                     </div>
