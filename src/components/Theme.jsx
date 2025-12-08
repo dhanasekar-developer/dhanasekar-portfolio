@@ -14,7 +14,7 @@ const Theme = ({ hideAndShowTheme, ref }) => {
     }
 
   return (
-    <div ref={ref} className={`bg-primary-three shadow-shadow_8 h-auto w-[250px] fixed top-[100px] rounded-md py-[10px] px-[20px] duration-700 -right-[300px] ${ dark ? 'border-2 border-gray-500' : '' } `}>
+    <div ref={ref} className={`bg-primary-three z-50 shadow-shadow_8 h-auto w-[250px] fixed top-[100px] rounded-md py-[10px] px-[20px] duration-700 -right-[300px] ${ dark ? 'border-2 border-gray-500' : '' } `}>
         <div>
             <span className="flex justify-between items-center text-secondary-one mb-3">
                 <span className="text-xl font-extrabold capitalize inline-block">theme</span>
