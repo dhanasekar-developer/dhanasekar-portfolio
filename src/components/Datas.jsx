@@ -21,8 +21,8 @@ export const navigations = [
     {'id':2,'title':'About','toPath':'about','icon':<IoMdContact size={30} />,'element':About},
     {'id':3,'title':'Portfolio','toPath':'portfolio','icon':<FaImage size={25} />,'element':Portfolio},
     // {'id':4,'title':'Skills','toPath':'skills','icon':<GiMightySpanner size={32} />,'element':Skills},
-    {'id':4,'title':'Resume','toPath':'resume','icon':<FaFileAlt size={25} />,'element':Resume},
-    {'id':5,'title':'Contact','toPath':'contact','icon':<LuMessageCircleMore size={30} />,'element':Contact},
+    {'id':4,'title':'Resume','toPath':'resume','icon':<FaFileAlt size={30} />,'element':Resume},
+    {'id':5,'title':'Contact','toPath':'contact','icon':<LuMessageCircleMore size={28} />,'element':Contact},
     {'id':6,'title':'Footer','toPath':'footer','icon':<FaImage />,'element':Footer},
 ]
 
@@ -77,7 +77,7 @@ export const resumeData = {
     ],
 
     experience:[
-        {id:1, title:'Full Stack Developer',designation:'Junior Associate', company:'AV7 SCM | Duration: 1+ Years', content:'Worked as a Full Stack Developer, specializing in React JS and Django.', subContent: [{title: 'FrontEnd', content:'Enhanced code readability and reuse by creating custom reusable components in React, reducing duplication by 40% across modules. Utilized React Hooks and Redux for efficient state management, improving UI responsiveness and consistency. Developed user-facing interfaces using React.js and Tailwind CSS, contributing to smooth workflows across internal tools and client-facing platforms.'}, {title: 'BackEnd', content:'Boosted API performance by optimizing data handling and logic using Django models, resulting in faster response times. Used PostgreSQL alongside Django ORM for managing structured data with moderate complexity. Collaborated on backend modules for visitor management, logistics, and budgeting, supporting business operations through well-structured APIs. Actively involved in version control, feature deployment, and debugging using Git within an agile team environment.'}]}
+        {id:1, title:'Full Stack Developer',designation:'Junior Associate', company:'AV7 SCM | Duration: 1.5+ Years', content:'Worked as a Full Stack Developer, specializing in React JS and Django.', subContent: [{title: 'FrontEnd', content:'Enhanced code readability and reuse by creating custom reusable components in React, reducing duplication by 40% across modules. Utilized React Hooks and Redux for efficient state management, improving UI responsiveness and consistency. Developed user-facing interfaces using React.js and Tailwind CSS, contributing to smooth workflows across internal tools and client-facing platforms.'}, {title: 'BackEnd', content:'Boosted API performance by optimizing data handling and logic using Django models, resulting in faster response times. Used PostgreSQL alongside Django ORM for managing structured data with moderate complexity. Collaborated on backend modules for visitor management, logistics, and budgeting, supporting business operations through well-structured APIs. Actively involved in version control, feature deployment, and debugging using Git within an agile team environment.'}]}
     ]
 }
 

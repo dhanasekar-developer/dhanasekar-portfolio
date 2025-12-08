@@ -14,16 +14,6 @@ import { TiTickOutline } from 'react-icons/ti';
 import { IoIosSend } from "react-icons/io";
 import axios from 'axios';
 
-
-// export const contactField = [
-//     {'id':'userName','title':'Name','colSpan':1,'fieldType':'text'},
-//     {'id':'companyName','title':'Company Name','colSpan':1,'fieldType':'text'},
-//     {'id':'email','title':'Email','colSpan':1,'fieldType':'text'},
-//     {'id':'mobileNo','title':'Mobile No','colSpan':1,'fieldType':'text'},
-//     {'id':'subject','title':'Subject','colSpan':2,'fieldType':'text'},
-//     {'id':'content','title':'Content','colSpan':2,'fieldType':'textarea'},
-// ]
-
 const contactSchema = z.object({
 	userName: z.string().min(1, { message: 'Name is required' }),
 	companyName: z.string().min(1, { message: 'Company name is required' }),
@@ -132,7 +122,7 @@ export default function Contact({background}) {
 											fieldType == 'number' ? e.target.value = e.target.value.replace(/\D/g, '') : ''
 										}}
 										onBlur={() => validateField(id)}
-										className={`${id != 'email' ? 'capitalize' : ''}  peer text-secondary-one  bg-primary-six shadow-shadow_8 !font-Nunito h-12 w-full rounded-md  px-3 font-bold  text-lg text-gray-300 outline-none transition-all duration-200 relative z-[0]`}
+										className={`peer text-secondary-three bg-primary-six shadow-shadow_8 !font-Nunito h-12 w-full rounded-md px-3 font-semibold text-base outline-none transition-all duration-200 relative z-[0]`}
 										/> 
 
 										<label ref={(e)=>labelsRef.current[id] = e} id={`lable_${id}`} htmlFor={id} className={`text-secondary-one font-Nunito absolute top-2 left-3 font-bold text-lg peer-focus:-top-8 peer-focus:left-1 peer-valid:-top-8 peer-valid:left-1 transition-all duration-300 w-full flex justify-between`}>
@@ -159,7 +149,7 @@ export default function Contact({background}) {
 										{...register(id)}
 										onInput={() => clearErrors(id)}
 										onBlur={() => validateField(id)}
-										className={` peer text-secondary-one bg-primary-six shadow-shadow_8 !font-Nunito !h-32 w-[100%] rounded-md py-2 px-3 font-bold capitalize text-lg  outline-none transition-all duration-200 resize-none`}/>
+										className={`peer text-secondary-three bg-primary-six shadow-shadow_8 !font-Nunito !h-32 w-[100%] rounded-md py-2 px-3 font-semibold text-base outline-none transition-all duration-200 resize-none`}/>
 										<label htmlFor='content' className={`text-secondary-one font-Nunito absolute top-2 left-3 font-bold text-lg peer-focus:-top-8 peer-focus:left-1 peer-valid:-top-8 peer-valid:left-1 transition-all duration-300`}>
 											Content 
 											<span className='text-red-500 text-2xl'>*</span>

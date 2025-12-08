@@ -47,7 +47,7 @@ export default function Header() {
                     {currentNav}
                 </div>
                 <div className=''>
-                    <button className={`text-primary-one text-[18px] font-extrabold font-Nunito flex gap-2 items-center duration-500 !overflow-hidden outline-none focus:outline-none`} 
+                    <button className={`text-primary-one text-[18px] font-extrabold font-Nunito flex gap-2 items-center duration-500 !overflow-hidden outline-none focus:outline-none border-none select-none ring-0 `} 
                     onClick={ () => handleDarkMode() }
                     >
                         {!dark ? (

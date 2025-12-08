@@ -5,7 +5,7 @@ const ErrorContainer = ({ message }) => {
         message ? 'opacity-100 mt-[2px]' : 'opacity-0'
       }`}
     >
-      <div className="text-red-500 text-[14px] font-semibold">
+      <div className="text-red-500 text-[13px] font-semibold">
         {message}
       </div>
     </div>
