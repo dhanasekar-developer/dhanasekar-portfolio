@@ -15,16 +15,16 @@ import { IoIosSend } from "react-icons/io";
 import axios from 'axios';
 
 const contactSchema = z.object({
-	userName: z.string().min(1, { message: 'Name is required' }),
-	companyName: z.string().min(1, { message: 'Company name is required' }),
+	name: z.string().min(1, { message: 'Name is required' }),
+	company_name: z.string().min(1, { message: 'Company name is required' }),
 	email: z.string().min(1, { message: 'Email is required' }).email({ message: 'Email is invalid' }),
-	mobileNo: z.string().regex(/^\d{10}$/, { message: 'Mobile number must be exactly 10 digits' }),
+	mobile_no: z.string().regex(/^\d{10}$/, { message: 'Mobile number must be exactly 10 digits' }),
 	subject: z.string().min(1, { message: 'Subject is required' }),
 	content: z.string().min(1, { message: 'Content is required' }),
 });
 
 export default function Contact({background}) {
-
+    console.log(import.meta.env.VITE_API_KEY)
 	const dark = useSelector(getDarkMode)
 	const containerWidth = useSelector(getContainerWidth)
 	const width = useSelector(getScreenWidth)
@@ -38,23 +38,30 @@ export default function Contact({background}) {
 			transition:{ duration:0.7, delay:0.2 }
 		}
 	})
+
     const {showAlert, closeAlert} = useAlert()
 
     const loadingHeader = <>Your email is sending...</>
     const successHeader = <><TiTickOutline className="text-3xl p-0" /> Your email sent successfully</>
     const failedHeader = <>Your email is sending...</>
-	const apiLink = import.meta.env.VITE_API_LINK
 
-    async function submitFunction(formData){
-        event.preventDefault();
+    const handleContactSubmit = async (data) => {
         showAlert({loading: true, heading: loadingHeader})
         try{
-            let response = await axios.post(`${apiLink}/email_send`,formData,{
-                headers:{
-                    'Content-Type': 'application/json'
+            let response = await axios.post(`${import.meta.env.VITE_API_LINK}/email/send_email`, 
+                {   subject: data.subject,
+                    to_email: [import.meta.env.VITE_TO_EMAIL],
+                    context: data,
+                    template_name: 'portfolio'
+                },
+                {
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'x-api-key': import.meta.env.VITE_API_KEY
+                    }
                 }
-            })
-            if(response.data.success){
+            )
+            if(response){
                 showAlert({loading: false, heading: successHeader, message: 'Thank you for your response, I will contact you as soon as possible.'})
 				reset()
             }
@@ -96,13 +103,13 @@ export default function Contact({background}) {
 					<h1 className='font-Nunito font-extrabold text-center'>
 						Contact <span className='text-theme-color'>Me!</span>
 					</h1>
-					<h3 className={`text-secondary-three text-xl  capitalize text-center font-extrabold`}>
+					{/* <h3 className={`text-secondary-three text-xl  capitalize text-center font-extrabold`}>
 						i'm verify responsive to message
-					</h3>
-					<form onSubmit={handleSubmit(submitFunction)} className={`py-10 md:pt-10 grid gap-[35px] ${width<900 ? 'grid-cols-1' : 'grid-cols-2' }`}>
+					</h3> */}
+					<form onSubmit={handleSubmit(handleContactSubmit)} className={`py-10 md:pt-10 grid gap-[35px] ${width<900 ? 'grid-cols-1' : 'grid-cols-2' }`}>
 						{
 						contactField.map((field,index)=>{
-							const {id,title,colSpan,fieldType,max_length} = field;
+							const {id, title, colSpan, fieldType, max_length} = field;
 							const x_value = index%2 == 0 ? -100 : 100
 							if(fieldType !== 'textarea'){	
 								return (
