@@ -24,8 +24,8 @@ const contactSchema = z.object({
 });
 
 export default function Contact({background}) {
-    console.log(import.meta.env.VITE_API_KEY)
-	const dark = useSelector(getDarkMode)
+
+    const dark = useSelector(getDarkMode)
 	const containerWidth = useSelector(getContainerWidth)
 	const width = useSelector(getScreenWidth)
 	const labelsRef = useRef({})
